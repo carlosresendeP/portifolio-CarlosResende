@@ -65,7 +65,7 @@ export const ImageSection = styled.div`
   
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
   }
 `;
