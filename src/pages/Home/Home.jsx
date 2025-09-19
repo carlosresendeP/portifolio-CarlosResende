@@ -5,8 +5,9 @@ import PersonImg from '../../assets/person.png';
 import Button from "../../components/UI/Button/button";
 import About from "../About/About";
 import Projects from "../Projects/projects";
-import WorkFlow from "../WorkFlows/workflow";
+
 import Skills from "../Skills/Skill";
+import WorkFlow from "../WorkFlows/workflow";
 
 const ListTitles = [
   "Desenvolvedor Front-End",
