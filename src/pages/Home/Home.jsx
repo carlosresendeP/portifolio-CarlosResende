@@ -4,6 +4,9 @@ import { Container, Subtitle, Title, Highlight, TypewriterText, IntroText, Conte
 import PersonImg from '../../assets/person.png';
 import Button from "../../components/UI/Button/button";
 import About from "../About/About";
+import Projects from "../Projects/projects";
+import WorkFlow from "../WorkFlows/workflow";
+import Skills from "../Skills/Skill";
 
 const ListTitles = [
   "Desenvolvedor Front-End",
@@ -77,6 +80,12 @@ function Home() {
       </Container>
 
       <About></About>
+
+      <Projects></Projects>
+
+      <WorkFlow></WorkFlow>
+
+      <Skills></Skills>
     </>
     
     
