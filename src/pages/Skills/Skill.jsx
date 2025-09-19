@@ -31,7 +31,8 @@ import {
     SiMongodb, 
     SiPostgresql,
     SiExpress,
-    SiPrisma
+    SiPrisma,
+    SiN8N 
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -64,7 +65,8 @@ const Skills = () => {
             skills: [
                 { name: "Figma", icon: <FaFigma />, level: "Básico" },
                 { name: "Git", icon: <FaGitAlt />, level: "Intermediário" },
-                { name: "UI/UX Design", icon: <FaDatabase />, level: "Básico" }
+                { name: "UI/UX Design", icon: <FaDatabase />, level: "Básico" },
+                {name: "N8N", icon: <SiN8N  />, level: "Básico" },
             ]
         }
     ];
