@@ -3,11 +3,11 @@ import { Container, Subtitle, Title, Highlight, TypewriterText, IntroText, Conte
 
 import PersonImg from '../../assets/person.png';
 import Button from "../../components/UI/Button/button";
-import About from "../About/About";
+import About from "../About/Index.About";
 import Projects from "../Projects/projects";
 
-import Skills from "../Skills/Skill";
-import WorkFlow from "../WorkFlows/workflow";
+import Skills from "../Skills/index.Skill";
+import WorkFlow from "../WorkFlows/index.workflow";
 
 const ListTitles = [
   "Desenvolvedor Front-End",

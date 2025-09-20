@@ -1,4 +1,4 @@
-import { Container, ContentCard, ContentWork, HeaderWork, WorkflowItem, StepNumber, StepIcon, StepContent, StepTitle, StepDescription } from "./workflow.styled";
+import { Container, ContentWork, HeaderWork, WorkflowItem, StepNumber, StepIcon, StepContent, StepTitle, StepDescription } from "./workflow.styled";
 import { FaSearch, FaPalette, FaCode, FaRocket } from 'react-icons/fa';
 
 const WorkFlow = () => {
