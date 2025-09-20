@@ -7,7 +7,7 @@ import About from "../About/Index.About";
 import Projects from "../Projects/projects";
 
 import Skills from "../Skills/index.Skill";
-import WorkFlow from "../WorkFlows/index.workflow";
+import WorkFlow from "../WorkFlows/index.Workflow";
 
 const ListTitles = [
   "Desenvolvedor Front-End",
