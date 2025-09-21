@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import { Container, Subtitle, Title, Highlight, TypewriterText, IntroText, Content, ImageContent,ContentText, PersonImage} from "./Home.styled";
-
-import PersonImg from '../../assets/person.png';
+import PersonImg from '/src/assets/person.png';
 import {Button }from "../../components/UI/Button/button";
 import About from "../../components/About/Index.About";
 import Projects from "../../components/Projects/projects";
-
 import Skills from "../../components/Skills/index.Skill";
 import WorkFlow from "../../components/WorkFlows/index.Workflow";
 import Faq from "../../components/FAQ/index.faq";
@@ -20,7 +18,7 @@ const ListTitles = [
 
 function Home() {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-  const [displayedText, setDisplayedText] = useState("");
+  const [displayedText, setDisplayedText] = useState(""); 
   const [isDeleting, setIsDeleting] = useState(false);
   const [charIndex, setCharIndex] = useState(0);
 
@@ -29,24 +27,20 @@ function Home() {
     let timeout;
 
     if (!isDeleting && charIndex < currentTitle.length) {
-      // Digitando
       timeout = setTimeout(() => {
         setDisplayedText(currentTitle.slice(0, charIndex + 1));
         setCharIndex(charIndex + 1);
-      }, 100); // Velocidade de digitação
+      }, 100);
     } else if (!isDeleting && charIndex === currentTitle.length) {
-      // Pausa antes de começar a apagar
       timeout = setTimeout(() => {
         setIsDeleting(true);
-      }, 10000); // 10 segundos de pausa
+      }, 10000);
     } else if (isDeleting && charIndex > 0) {
-      // Apagando
       timeout = setTimeout(() => {
         setDisplayedText(currentTitle.slice(0, charIndex - 1));
         setCharIndex(charIndex - 1);
-      }, 50); // Velocidade de apagar (mais rápido)
+      }, 50);
     } else if (isDeleting && charIndex === 0) {
-      // Mudando para o próximo título
       setIsDeleting(false);
       setCurrentTitleIndex((prev) => (prev + 1) % ListTitles.length);
     }
@@ -57,11 +51,8 @@ function Home() {
   return (
     <>
       <Container id="home">
-
         <Content>
-          <div className="background-effect">
-
-          </div>
+          <div className="background-effect"></div>
           <ContentText>
             <IntroText>Hi, I'm <Highlight>Carlos Resende 👋🏼</Highlight></IntroText>
             <Title>
@@ -70,10 +61,7 @@ function Home() {
             <Subtitle>
               Como desenvolvedor Front-End, crio experiências digitais que unem estética e usabilidade. Do layout à interação, cada linha de código é projetada para encantar o usuário, garantindo sites rápidos, responsivos e memoráveis!
             </Subtitle>
-
-            <Button >
-              Começe um projeto
-            </Button>
+            <Button>Começe um projeto</Button>
           </ContentText>
           <ImageContent>
             <div>
@@ -81,24 +69,15 @@ function Home() {
             </div>
           </ImageContent>
         </Content>
-
-
       </Container>
 
-      <About></About>
-
-      <Projects></Projects>
-
-      <WorkFlow></WorkFlow>
-
-      <Skills></Skills>
-
-      <Faq></Faq>
-
-      <Cta></Cta>
+      <About />
+      <Projects />
+      <WorkFlow />
+      <Skills />
+      <Faq />
+      <Cta />
     </>
-    
-    
   );
 }
 
