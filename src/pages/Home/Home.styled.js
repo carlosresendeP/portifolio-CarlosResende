@@ -28,6 +28,56 @@ export const Container = styled.div`
   margin: 0 auto;
   background-color: ${({ theme }) => theme.colors.neutral[950]};
   
+  .background-effect {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    mix-blend-mode: overlay;
+    filter: blur(2px);
+    opacity: 0.1;
+
+  background-image: 
+  linear-gradient(
+    0deg,
+    transparent 24%,
+    ${({ theme }) => theme.colors.neutral[600]} 25%,
+    ${({ theme }) => theme.colors.neutral[600]} 26%,
+    
+    transparent 27%,
+    transparent 74%,
+    ${({ theme }) => theme.colors.neutral[600]} 75%,
+    ${({ theme }) => theme.colors.neutral[600]} 76%,
+    transparent 77%,
+    transparent
+  ),
+  linear-gradient(
+    90deg,
+    transparent 24%,
+    ${({ theme }) => theme.colors.neutral[600]} 25%,
+    ${({ theme }) => theme.colors.neutral[600]} 26%,
+    transparent 27%,
+    transparent 74%,
+    ${({ theme }) => theme.colors.neutral[600]} 75%,
+    ${({ theme }) => theme.colors.neutral[600]} 76%,
+    transparent 77%,
+    transparent
+  );
+  background-size: 100px 105px;
+  
+  animation: backgroundMove 20s linear infinite;
+
+    @keyframes backgroundMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 0px 105px; }
+
+    }
+} 
+
   @media (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
       max-width: 1280px;
   }
@@ -48,6 +98,8 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  background-color: transparent;
+  z-index: 2;
 
    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}){
     flex-direction: column;

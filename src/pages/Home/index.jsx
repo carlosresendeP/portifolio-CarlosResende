@@ -8,6 +8,8 @@ import Projects from "../Projects/projects";
 
 import Skills from "../Skills/index.Skill";
 import WorkFlow from "../WorkFlows/index.Workflow";
+import Faq from "../FAQ/index.faq";
+import Cta from "../../components/CTA/Cta";
 
 const ListTitles = [
   "Desenvolvedor Front-End",
@@ -56,7 +58,11 @@ function Home() {
   return (
     <>
       <Container id="home">
+
         <Content>
+          <div className="background-effect">
+
+          </div>
           <ContentText>
             <IntroText>Hi, I'm <Highlight>Carlos Resende 👋🏼</Highlight></IntroText>
             <Title>
@@ -87,6 +93,10 @@ function Home() {
       <WorkFlow></WorkFlow>
 
       <Skills></Skills>
+
+      <Faq></Faq>
+
+      <Cta></Cta>
     </>
     
     
