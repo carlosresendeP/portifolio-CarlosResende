@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router";
 
 export const Container = styled.div`
   width: 100%;
@@ -60,6 +61,8 @@ export const Content = styled.div`
   height: 100%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 80px;
   
@@ -236,6 +239,7 @@ export const Button = styled.a`
   font-weight: 500;
   font-size: 0.9rem;
   transition: all 0.3s ease;
+  cursor: pointer;
   
   &:hover {
     background: ${({ theme }) => theme.colors.neutral[900]};
@@ -247,10 +251,88 @@ export const Button = styled.a`
   svg {
     font-size: 1.1rem;
   }
-  
+
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
     max-width: 200px;
     justify-content: center;
+  }
+
+`;
+
+export const FinalButton = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  padding: 20px 40px;
+  font-size: 1rem;
+  background: transparent;
+  color: ${({ theme }) => theme.colors.neutral[900]};
+  border: 2px solid ${({ theme }) => theme.colors.neutral[300]};
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: ${({ theme }) => theme.colors.primary[700]};
+    border-color: ${({ theme }) => theme.colors.primary[700]};
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    color: ${({ theme }) => theme.colors.neutral[100]};
+  }
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: 20px 30px;
+  }
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 280px;
+  }
+`;
+
+export const ModalBackdrop = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+`;
+
+export const ModalCard = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: ${({ theme }) => theme.colors.neutral[100]};
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-align: center;
+  border: 2px solid ${({ theme }) => theme.colors.primary[400]};
+  max-width: 400px;
+  animation: fadeIn 0.3s ease;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    max-width: 90%;
+    padding: 15px 20px;
+  }
+`;
+
+export const ModalText = styled.p`
+  margin: 0;
+  font-size: 1.1rem;
+  color: ${({ theme }) => theme.colors.primary[600]};
+  font-weight: 600;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 1rem;
   }
 `;

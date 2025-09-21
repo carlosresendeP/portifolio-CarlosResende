@@ -1,11 +1,34 @@
-import { Buttons, Container, Content, Description, Header, ImgProject, ProjectsList, Tags, TextProject, Button, Title, Subtitle } from "./projects.styled"
-import projeto1 from '../../assets/projects-images/Persormace-master-thumb.png'
-import projeto3 from '../../assets/projects-images/Conf-Doce-Encanto.png'
+import { Buttons, Container, Content, Description, Header, ImgProject, ProjectsList, Tags, TextProject, Button, Title, Subtitle, FinalButton, ModalBackdrop, ModalCard, ModalText } from "./projects.styled"
+import { Link } from "react-router"
+import { useState } from "react"
+import projeto1 from '../../assets/projects-images/Mockup-Perf-Master.png'
+import projeto2 from '../../assets/projects-images/Mockup-DevBurger.png'
+import projeto3 from '../../assets/projects-images/Mockup-doce-encanto.png'
 import { MdComputer } from 'react-icons/md'
 import { FaGithub } from 'react-icons/fa'
 
 
 const Projects = () => {
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleDeployClick = (deployUrl) => {
+        if (deployUrl === "#") {
+            setShowModal(true);
+            setTimeout(() => setShowModal(false), 3000); // Fecha automaticamente após 3 segundos
+        } else {
+            window.open(deployUrl, "_blank");
+        }
+    };
+
+    const handleGithubClick = (githubUrl) => {
+        if (githubUrl === "#") {
+            setShowModal(true);
+            setTimeout(() => setShowModal(false), 3000);
+        } else {
+            window.open(githubUrl, "_blank");
+        }
+    };
 
     const projects =[
         {
@@ -20,9 +43,9 @@ const Projects = () => {
             title: "DevBurger",
             tags: ["Html", "Css", "Styledcomponents", "JavaScript", "Node.js", "Express", "MongoDb", "Postgres", "Stripe"],
             description: "DevBurger, uma aplicação completa de gerenciamento de pedidos de hamburgueria, desenvolvida com frontend e backend separados. Este projeto foi criado para praticar conceitos modernos de desenvolvimento web full stack Projeto desenvolvido junto ao curso DevClub com Rodolfo Mori.",
-            imageUrl: "https://private-user-images.githubusercontent.com/165225304/439444029-bccc9abe-7aa7-47ee-a799-519bd0717f7c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTgyMzU3OTgsIm5iZiI6MTc1ODIzNTQ5OCwicGF0aCI6Ii8xNjUyMjUzMDQvNDM5NDQ0MDI5LWJjY2M5YWJlLTdhYTctNDdlZS1hNzk5LTUxOWJkMDcxN2Y3Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkxOFQyMjQ0NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNjlkMGVhMjQ2NWQwMjYzZDQ5YjM0Yjg4NjI5MGE4YmZlNTY4NDc4NWI4NzFlNTM4MDVlMDhlODE4OTNlOTYxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.guLhRnCiQ9ik0BUHqTayVQREYBuKoDHOg8_e46Jboss",
+            imageUrl: projeto2,
             deploy: "#",
-            githubUrl: "#"
+            githubUrl: "https://github.com/carlosresendeP/DevBurger-Interface"
         },
 
         {
@@ -61,11 +84,17 @@ const Projects = () => {
                             </Description>
 
                             <Buttons>
-                                <Button href={project.deploy} target="_blank">
+                                <Button 
+                                    as="button" 
+                                    onClick={() => handleDeployClick(project.deploy)}
+                                >
                                     <MdComputer />
                                     Ver Live
                                 </Button>
-                                <Button href={project.githubUrl} target="_blank">
+                                <Button 
+                                    as="button" 
+                                    onClick={() => handleGithubClick(project.githubUrl)}
+                                >
                                     <FaGithub />
                                     Ver no Github
                                 </Button>
@@ -73,7 +102,20 @@ const Projects = () => {
                         </TextProject>
                     </ProjectsList>
                 ))}
+
+                <FinalButton to="/projects">Ver Todos os projetos</FinalButton>
             </Content>
+            
+            {showModal && (
+                <>
+                    <ModalBackdrop onClick={() => setShowModal(false)} />
+                    <ModalCard>
+                        <ModalText>
+                            Live do Projeto não disponível no momento.
+                        </ModalText>
+                    </ModalCard>
+                </>
+            )}
         </Container>
     )
 }

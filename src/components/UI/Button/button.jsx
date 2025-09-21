@@ -1,6 +1,6 @@
 import { ButtonContainer } from "./Button.styles"
 
-const Button = ({children}) => {
+export const Button = ({children}) => {
 
     return(
         <ButtonContainer>
@@ -8,5 +8,3 @@ const Button = ({children}) => {
         </ButtonContainer>
     )
 }
-
-export default Button

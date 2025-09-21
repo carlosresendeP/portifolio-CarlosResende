@@ -52,6 +52,17 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb:hover {
     background: ${({ theme }) => theme.colors.neutral[500]};
   }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
 `;
 
 export default GlobalStyle;

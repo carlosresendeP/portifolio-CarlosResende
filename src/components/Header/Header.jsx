@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { HeaderContainer, Logo, Nav, NavBarMobile, NavLink, NavLinks, MobileMenu, MobileNavLinks, MobileNavLink } from "./Header.styled";
+import { HeaderContainer, Nav, NavBarMobile, NavLink, NavLinks, MobileMenu, MobileNavLinks, MobileNavLink } from "./Header.styled";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Logo } from "../UI/Logo/logo";
+
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,7 +33,8 @@ function Header() {
     <>
       <HeaderContainer>
         <Nav>
-          <Logo onClick={() => handleScrollTo('home')}>Meu Portfólio</Logo>
+          <Logo></Logo>
+
           <NavLinks>
             <NavLink onClick={() => handleScrollTo('home')}>Home</NavLink>
             <NavLink onClick={() => handleScrollTo('about')}>Sobre Mim</NavLink>

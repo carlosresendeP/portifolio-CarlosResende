@@ -2,18 +2,17 @@ import { useState, useEffect } from "react";
 import { Container, Subtitle, Title, Highlight, TypewriterText, IntroText, Content, ImageContent,ContentText, PersonImage} from "./Home.styled";
 
 import PersonImg from '../../assets/person.png';
-import Button from "../../components/UI/Button/button";
-import About from "../About/Index.About";
-import Projects from "../Projects/projects";
+import {Button }from "../../components/UI/Button/button";
+import About from "../../components/About/Index.About";
+import Projects from "../../components/Projects/projects";
 
-import Skills from "../Skills/index.Skill";
-import WorkFlow from "../WorkFlows/index.Workflow";
-import Faq from "../FAQ/index.faq";
+import Skills from "../../components/Skills/index.Skill";
+import WorkFlow from "../../components/WorkFlows/index.Workflow";
+import Faq from "../../components/FAQ/index.faq";
 import Cta from "../../components/CTA/Cta";
 
 const ListTitles = [
   "Desenvolvedor Front-End",
-  "Desenvolvedor de interfaces",
   "Desenvolvedor Full Stack",
   "Desenvolvedor Web",
   "Engenheiro de Software",

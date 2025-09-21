@@ -21,17 +21,7 @@ export const Nav = styled.nav`
   align-items: center;
 `;
 
-export const Logo = styled.div`
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: ${({ theme }) => theme.colors.neutral[100]};
-  cursor: pointer;
-  transition: all 0.25s ease;
-  
-  &:hover {
-    color: ${({ theme }) => theme.colors.primary[600]};
-  }
-`;
+
 
 export const NavLinks = styled.div`
   display: flex;

@@ -1,4 +1,7 @@
-import { Content, CopyText, FooterContainer, Logo } from "./Footer.styled";
+
+import { Logo } from "../UI/Logo/logo";
+import { Content, CopyText, FooterContainer, LogoContent, SocialLink, SocialLinks } from "./Footer.styled";
+import { FaLinkedin, FaGithub, FaBehance } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -7,7 +10,23 @@ const Footer = () => {
     return(
         <FooterContainer>
             <Content>
-                <Logo>Meu Portfólio</Logo>
+                <LogoContent>
+                    <Logo></Logo>
+
+                    <SocialLinks>
+                        <SocialLink href="https://www.linkedin.com/in/carlos-paula2001/" target="_blank">
+                        <FaLinkedin /> 
+                        Carlos Paula
+                        </SocialLink>
+                        <SocialLink href="https://github.com/carlosresendeP" target="_blank">
+                        <FaGithub/>/CarlosResendeP
+                        </SocialLink>
+                        {/* <SocialLink href="https://behance.net/felipekenzo" target="_blank">
+                        <FaBehance />
+                        /felipekenzo
+                        </SocialLink> */}
+                    </SocialLinks>
+                </LogoContent>
 
                 <CopyText>
                     <p>&copy; {currentYear}. Todos os direitos reservados.</p>
