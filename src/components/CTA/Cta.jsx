@@ -1,14 +1,31 @@
-import { Container, Content, Title, Description, Highlight, CTAButton, ContentText } from "./cta.styled"
+import { useContactModal } from "../../hooks/useContactModal"
+import { Button } from "../UI/Button/button"
+import ContactModal from "../ContactModal/ContactModal"
+import { 
+    Container, 
+    Content, 
+    Title, 
+    Description, 
+    Highlight, 
+    ContentText
+} from "./cta.styled"
 
 const Cta = () => {
+    const {
+        showModal,
+        openModal,
+        closeModal,
+        register,
+        handleSubmit,
+        onSubmit,
+        errors,
+        isSubmitting
+    } = useContactModal()
 
     return (
-        <Container>
-
+        <Container id="contact">
             <Content>
-                <div className="background-effect">
-
-                </div>
+                <div className="background-effect"></div>
 
                 <ContentText>
                     <Title>
@@ -19,11 +36,25 @@ const Cta = () => {
                         Do primeiro esboço ao código final, cada detalhe importa.<br />
                         Seu projeto merece ser levado ao <Highlight>próximo nível</Highlight>.
                     </Description>
-                    <CTAButton>
+                    <Button 
+                        variant="cta" 
+                        onClick={openModal}
+                        className="cta-button"
+                    >
                         Comece um projeto
-                    </CTAButton>
+                    </Button>
                 </ContentText>
             </Content>
+
+            <ContactModal
+                showModal={showModal}
+                closeModal={closeModal}
+                register={register}
+                handleSubmit={handleSubmit}
+                onSubmit={onSubmit}
+                errors={errors}
+                isSubmitting={isSubmitting}
+            />
         </Container>
     )
 }

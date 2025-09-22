@@ -159,39 +159,3 @@ export const Highlight = styled.span`
     color: ${({ theme }) => theme.colors.primary[400]};
     font-weight: 600;
 `;
-
-export const CTAButton = styled.button`
-    background: transparent;
-    color: ${({ theme }) => theme.colors.neutral[100]};
-    border: 2px solid ${({ theme }) => theme.colors.neutral[100]};
-    padding: 16px 32px;
-    border-radius: 8px;
-    font-size: 1.125rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 10px;
-    
-    &:hover {
-        background: ${({ theme }) => theme.colors.neutral[100]};
-        color: ${({ theme }) => theme.colors.neutral[950]};
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
-    }
-    
-    &:active {
-        transform: translateY(0);
-    }
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-        padding: 14px 28px;
-        font-size: 1rem;
-    }
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        padding: 12px 24px;
-        font-size: 0.95rem;
-        width: 100%;
-        max-width: 250px;
-    }
-`;

@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Container, Subtitle, Title, Highlight, TypewriterText, IntroText, Content, ImageContent,ContentText, PersonImage} from "./Home.styled";
 import PersonImg from '/src/assets/person.png';
-import {Button }from "../../components/UI/Button/button";
+import { Button } from "../../components/UI/Button/button";
+import { useContactModal } from "../../hooks/useContactModal";
+import ContactModal from "../../components/ContactModal/ContactModal";
 import About from "../../components/About/Index.About";
 import Projects from "../../components/Projects/projects";
 import Skills from "../../components/Skills/index.Skill";
@@ -21,6 +23,17 @@ function Home() {
   const [displayedText, setDisplayedText] = useState(""); 
   const [isDeleting, setIsDeleting] = useState(false);
   const [charIndex, setCharIndex] = useState(0);
+
+  const {
+    showModal,
+    openModal,
+    closeModal,
+    register,
+    handleSubmit,
+    onSubmit,
+    errors,
+    isSubmitting
+  } = useContactModal()
 
   useEffect(() => {
     const currentTitle = ListTitles[currentTitleIndex];
@@ -61,7 +74,7 @@ function Home() {
             <Subtitle>
               Como desenvolvedor Front-End, crio experiências digitais que unem estética e usabilidade. Do layout à interação, cada linha de código é projetada para encantar o usuário, garantindo sites rápidos, responsivos e memoráveis!
             </Subtitle>
-            <Button>Começe um projeto</Button>
+            <Button onClick={openModal}>Começe um projeto</Button>
           </ContentText>
           <ImageContent>
             <div>
@@ -70,6 +83,16 @@ function Home() {
           </ImageContent>
         </Content>
       </Container>
+
+      <ContactModal
+        showModal={showModal}
+        closeModal={closeModal}
+        register={register}
+        handleSubmit={handleSubmit}
+        onSubmit={onSubmit}
+        errors={errors}
+        isSubmitting={isSubmitting}
+      />
 
       <About />
       <Projects />
