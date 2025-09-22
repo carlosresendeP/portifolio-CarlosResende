@@ -133,6 +133,101 @@ VITE_URL_N8N=https://seu-webhook-n8n.com/webhook/contact
   "message": "Dados recebidos com sucesso"
 }</code></pre>
 
+<h2>📁 Estrutura do Projeto</h2>
+
+<pre><code>src/
+├── components/
+│   ├── UI/
+│   │   └── Button/           # Componente de botão reutilizável
+│   ├── Header/               # Cabeçalho com navegação
+│   ├── ContactModal/         # Modal de contato
+│   └── CTA/                  # Call-to-action
+├── pages/
+│   ├── Home/                 # Página inicial
+│   ├── About/                # Sobre mim
+│   ├── Projects/             # Portfólio
+│   ├── Skills/               # Habilidades
+│   ├── FAQ/                  # Perguntas frequentes
+│   └── WorkFlows/            # Processo de trabalho
+├── hooks/
+│   └── useContactModal.js    # Hook para modal de contato
+├── styles/
+│   ├── theme.js              # Configurações do tema
+│   └── GlobalStyles.js       # Estilos globais
+└── assets/                   # Imagens e recursos estáticos
+</code></pre>
+
+<h2>🛠️ Comandos Disponíveis</h2>
+
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>npm run dev</code></td>
+<td>Inicia o servidor de desenvolvimento</td>
+</tr>
+<tr>
+<td><code>npm run build</code></td>
+<td>Gera build de produção</td>
+</tr>
+<tr>
+<td><code>npm run preview</code></td>
+<td>Visualiza o build de produção</td>
+</tr>
+<tr>
+<td><code>npm run lint</code></td>
+<td>Executa verificação de código</td>
+</tr>
+</tbody>
+</table>
+
+<h2>📱 Responsividade</h2>
+
+<p>O projeto é totalmente responsivo com breakpoints configurados para:</p>
+
+<ul>
+  <li><strong>Mobile:</strong> até 480px</li>
+  <li><strong>Tablet:</strong> 481px - 768px</li>
+  <li><strong>Desktop:</strong> acima de 768px</li>
+</ul>
+
+<h2>🎨 Personalização</h2>
+
+<p>Para personalizar as cores e temas, edite o arquivo <code>src/styles/theme.js</code>:</p>
+
+<pre><code>export const theme = {
+  colors: {
+    primary: '#your-color',
+    secondary: '#your-color',
+    background: '#your-color',
+    // ... outras cores
+  },
+  // ... outras configurações
+};</code></pre>
+
+<h2>🤝 Contribuição</h2>
+
+<ol>
+  <li>Faça um fork do projeto</li>
+  <li>Crie uma branch para sua feature (<code>git checkout -b feature/nova-feature</code>)</li>
+  <li>Commit suas mudanças (<code>git commit -m 'Adiciona nova feature'</code>)</li>
+  <li>Push para a branch (<code>git push origin feature/nova-feature</code>)</li>
+  <li>Abra um Pull Request</li>
+</ol>
+
+<h2>📝 Licença</h2>
+
+<p>Este projeto está sob a licença MIT. Veja o arquivo <code>LICENSE</code> para mais detalhes.</p>
+
+<hr>
+
+<p align="center">Desenvolvido com ❤️ usando React + Vite + Styled Components</p>
+
 <h2>🎨 Características Principais</h2>
 
 <ul>
@@ -173,6 +268,15 @@ VITE_URL_N8N=https://seu-webhook-n8n.com/webhook/contact
 
 <p>Após executar o comando <code>npm run dev</code>, o projeto estará disponível em:</p>
 <p><strong>URL:</strong> <a href="http://localhost:5173/" target="_blank">http://localhost:5173/</a></p>
+
+<h2>⚠️ Configuração Importante</h2>
+
+<p>Não esqueça de:</p>
+<ol>
+  <li>Copiar o arquivo <code>.env.example</code> para <code>.env</code></li>
+  <li>Configurar sua URL do webhook n8n no arquivo <code>.env</code></li>
+  <li>Ter um servidor n8n rodando (caso queira usar o formulário de contato)</li>
+</ol>
 
 <h2>🤝 Contribuição</h2>
 
