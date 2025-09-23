@@ -2,7 +2,7 @@
 
 > **Desenvolvedor Full Stack** especializado em React.js, Node.js e tecnologias modernas
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://carlosresendep.github.io/portifolio-CarlosResende)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://portifolio-carlos-resende.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.0-purple)](https://vitejs.dev/)
 [![Styled Components](https://img.shields.io/badge/Styled--Components-6.0-pink)](https://styled-components.com/)
@@ -23,7 +23,7 @@ Este é meu portfolio profissional desenvolvido para apresentar minha jornada co
 ## 📸 Demonstração Visual
 
 ### 🖥️ Interface Desktop
-<p align="center">
+<p align="left">
   <img src="./src/assets/project-apresentation/desktop-1.png" alt="Homepage Desktop" width="250">
   <img src="./src/assets/project-apresentation/desktop-2.png" alt="Homepage Desktop" width="250">
   <img src="./src/assets/project-apresentation/desktop-3.png" alt="Homepage Desktop" width="250">
@@ -36,7 +36,7 @@ Este é meu portfolio profissional desenvolvido para apresentar minha jornada co
 </p>
 
 ### 📱 Interface Mobile
-<p align="center">
+<p align="left">
   <img src="./src/assets/project-apresentation/mobile-1.png" alt="Mobile View 1" width="250">
   <img src="./src/assets/project-apresentation/mobile-2.png" alt="Mobile View 1" width="250">
   <img src="./src/assets/project-apresentation/mobile-3.png" alt="Mobile View 1" width="250">
