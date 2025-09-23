@@ -24,28 +24,27 @@ Este é meu portfolio profissional desenvolvido para apresentar minha jornada co
 
 ### 🖥️ Interface Desktop
 <p align="center">
-  <img src="./src/assets/project-apresentation/image-desk-1.png" alt="Homepage Desktop" width="100%">
-  <br>
-  <sub><i>Homepage com hero section e navegação principal</i></sub>
-</p>
-
-<p align="center">
-  <img src="./src/assets/project-apresentation/image-desk-2.png" alt="Projetos Desktop" width="100%">
-  <br>
-  <sub><i>Seção de projetos com cards interativos</i></sub>
-</p>
-
-<p align="center">
-  <img src="./src/assets/project-apresentation/image-desk-3.png" alt="Contato Desktop" width="100%">
-  <br>
-  <sub><i>Modal de contato com validação em tempo real</i></sub>
+  <img src="./src/assets/project-apresentation/desktop-1.png" alt="Homepage Desktop" width="250">
+  <img src="./src/assets/project-apresentation/desktop-2.png" alt="Homepage Desktop" width="250">
+  <img src="./src/assets/project-apresentation/desktop-3.png" alt="Homepage Desktop" width="250">
+  <img src="./src/assets/project-apresentation/desktop-4.png" alt="Homepage Desktop" width="250">
+  <img src="./src/assets/project-apresentation/desktop-5.png" alt="Homepage Desktop" width="250">
+  <img src="./src/assets/project-apresentation/desktop-6.png" alt="Homepage Desktop" width="250">
+  <img src="./src/assets/project-apresentation/desktop-7.png" alt="Homepage Desktop" width="250">
+    <br>
+  <sub><i>Design responsivo para desktop</i></sub>
 </p>
 
 ### 📱 Interface Mobile
 <p align="center">
-  <img src="./src/assets/project-apresentation/image-mobile-1.png" alt="Mobile View 1" width="250">
-  <img src="./src/assets/project-apresentation/image-mobile-2.png" alt="Mobile View 2" width="250">
-  <img src="./src/assets/project-apresentation/image-mobile-3.png" alt="Mobile View 3" width="250">
+  <img src="./src/assets/project-apresentation/mobile-1.png" alt="Mobile View 1" width="250">
+  <img src="./src/assets/project-apresentation/mobile-2.png" alt="Mobile View 1" width="250">
+  <img src="./src/assets/project-apresentation/mobile-3.png" alt="Mobile View 1" width="250">
+  <img src="./src/assets/project-apresentation/mobile-4.png" alt="Mobile View 1" width="250">
+  <img src="./src/assets/project-apresentation/mobile-5.png" alt="Mobile View 1" width="250">
+  <img src="./src/assets/project-apresentation/mobile-6.png" alt="Mobile View 1" width="250">
+  <img src="./src/assets/project-apresentation/mobile-7.png" alt="Mobile View 1" width="250">
+  <img src="./src/assets/project-apresentation/mobile-8.png" alt="Mobile View 1" width="250">
   <br>
   <sub><i>Design responsivo otimizado para dispositivos móveis</i></sub>
 </p>
