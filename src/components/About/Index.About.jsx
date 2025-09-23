@@ -32,7 +32,7 @@ function About() {
           </div>
           
           <Description>
-            Curso Sistemas de Informação e desenvolvimento FullStack atuo no desenvolvimento Front-End, criando interfaces modernas, responsivas e otimizadas para SEO. Minha experiência une código e design para transformar ideias em soluções digitais claras, eficientes e funcionais. Venho evoluindo continuamente em tecnologias como React, TailwindCSS e Node.js, sempre com o objetivo de entregar projetos que unam inovação, usabilidade e impacto real para marcas e negócios.
+            Sou estudante de Sistemas de Informação e atuo como desenvolvedor FullStack, com foco em Front-End. Crio interfaces modernas, responsivas e otimizadas para SEO, sempre alinhando design e código para transformar ideias em soluções digitais funcionais e envolventes. Tenho experiência com React, TailwindCSS e Node.js, tecnologias que utilizo para desenvolver projetos que combinam inovação, usabilidade e resultados concretos para marcas e negócios.
           </Description>
           
           <SocialLinks>
