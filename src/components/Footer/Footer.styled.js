@@ -20,6 +20,13 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    p{
+        color: ${({ theme }) => theme.colors.neutral[300]};
+        display:flex;
+        align-items: center;
+        gap:8px;
+    }
     
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         flex-direction: column;
@@ -35,9 +42,14 @@ export const Content = styled.div`
 
 export const CopyText = styled.div`
     color: ${({ theme }) => theme.colors.neutral[300]};
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+    justify-content: center;
+
     
     p {
-        margin: 0;
+        margin-top: 2px;
         font-size: 0.875rem;
         line-height: 1.4;
         
@@ -74,10 +86,12 @@ export const LogoContent = styled.div`
 `
 
 export const SocialLinks = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
   
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     align-items: center;

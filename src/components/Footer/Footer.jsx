@@ -1,7 +1,8 @@
 
 import { Logo } from "../UI/Logo/logo";
 import { Content, CopyText, FooterContainer, LogoContent, SocialLink, SocialLinks } from "./Footer.styled";
-import { FaLinkedin, FaGithub, FaBehance } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaWhatsapp  } from 'react-icons/fa';
+import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
 
@@ -21,16 +22,17 @@ const Footer = () => {
                         <SocialLink href="https://github.com/carlosresendeP" target="_blank">
                         <FaGithub/>/CarlosResendeP
                         </SocialLink>
-                        {/* <SocialLink href="https://behance.net/felipekenzo" target="_blank">
-                        <FaBehance />
-                        /felipekenzo
-                        </SocialLink> */}
+ 
+
                     </SocialLinks>
+                    <p><IoMdMail /> Email: dev.carlosresende@hotmail.com</p>
+                    <p><FaWhatsapp />Tel: (32) 9 9828-3189</p>
                 </LogoContent>
 
                 <CopyText>
                     <p>&copy; {currentYear}. Todos os direitos reservados.</p>
                     <p>Desenvolvido com React.js</p>
+
                 </CopyText>
             </Content>
 

@@ -219,6 +219,38 @@ export const IntroText = styled.p`
   }
 `;
 
+export const ButtonContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  
+  /* Remove o margin-top dos botões filhos quando estão no container */
+  button {
+    margin-top: 0;
+    flex: 1;
+    max-width: none;
+  }
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    justify-content: center;
+    
+    button {
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    
+    button {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+`;
+
 export const ImageContent = styled.div`
     background-color: ${({ theme }) => theme.colors.neutral[700]};
     width: 50%;

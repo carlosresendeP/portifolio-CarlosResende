@@ -32,8 +32,9 @@ const getVariantStyles = (variant, theme) => {
                 border: 2px solid ${theme.colors.neutral[300]};
                 
                 &:hover:not(:disabled) {
-                    background: ${theme.colors.neutral[200]};
+                    background: transparent;
                     border-color: ${theme.colors.neutral[400]};
+                    color: ${theme.colors.neutral[100]};
                 }
             `;
         default:

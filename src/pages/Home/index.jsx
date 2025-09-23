@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Subtitle, Title, Highlight, TypewriterText, IntroText, Content, ImageContent,ContentText, PersonImage} from "./Home.styled";
+import { Container, Subtitle, Title, Highlight, TypewriterText, IntroText, Content, ImageContent, ContentText, PersonImage, ButtonContainer} from "./Home.styled";
 import PersonImg from '/src/assets/person.png';
 import { Button } from "../../components/UI/Button/button";
 import { useContactModal } from "../../hooks/useContactModal";
@@ -74,7 +74,15 @@ function Home() {
             <Subtitle>
               Como desenvolvedor Front-End, crio experiências digitais que unem estética e usabilidade. Do layout à interação, cada linha de código é projetada para encantar o usuário, garantindo sites rápidos, responsivos e memoráveis!
             </Subtitle>
-            <Button onClick={openModal}>Começe um projeto</Button>
+            <ButtonContainer>
+              <Button onClick={openModal}>Começe um projeto</Button>
+              <Button 
+                variant="secondary" 
+                onClick={() => window.open('https://wa.me/5532998283189?text=Olá! Gostaria de solicitar um orçamento para meu projeto.', '_blank')}
+              >
+                Solicitar Orçamento
+              </Button>
+            </ButtonContainer>
           </ContentText>
           <ImageContent>
             <div>
