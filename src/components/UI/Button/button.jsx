@@ -12,7 +12,7 @@ export const Button = ({
         <ButtonContainer 
             onClick={onClick}
             type={type}
-            variant={variant}
+            $variant={variant}
             disabled={disabled}
             {...props}
         >

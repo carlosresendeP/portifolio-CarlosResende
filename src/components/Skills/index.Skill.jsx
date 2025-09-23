@@ -88,7 +88,7 @@ const Skills = () => {
                                     <SkillIcon>{skill.icon}</SkillIcon>
                                     <div>
                                         <SkillName>{skill.name}</SkillName>
-                                        <SkillLevel level={skill.level}>{skill.level}</SkillLevel>
+                                        <SkillLevel $level={skill.level}>{skill.level}</SkillLevel>
                                     </div>
                                 </SkillItem>
                             ))}

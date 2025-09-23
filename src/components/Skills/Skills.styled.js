@@ -165,8 +165,8 @@ export const SkillName = styled.h4`
 export const SkillLevel = styled.span`
     font-size: 0.875rem;
     font-weight: 500;
-    color: ${({ level, theme }) => {
-        switch (level) {
+    color: ${({ $level, theme }) => {
+        switch ($level) {
             case 'Avançado':
                 return theme.colors.primary[400];
             case 'Intermediário':

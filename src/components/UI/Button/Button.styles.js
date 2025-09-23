@@ -67,7 +67,7 @@ export const ButtonContainer = styled.button`
     align-items: center;
     justify-content: center;
     
-    ${({ variant, theme }) => getVariantStyles(variant, theme)}
+    ${({ $variant, theme }) => getVariantStyles($variant, theme)}
 
     &::before {
         content: '';
