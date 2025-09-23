@@ -2,7 +2,7 @@
 
 > **Desenvolvedor Full Stack** especializado em React.js, Node.js e tecnologias modernas
 
-[![Live Demo](https://portifolio-carlos-resende.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://portifolio-carlos-resende.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.0-purple)](https://vitejs.dev/)
 [![Styled Components](https://img.shields.io/badge/Styled--Components-6.0-pink)](https://styled-components.com/)
