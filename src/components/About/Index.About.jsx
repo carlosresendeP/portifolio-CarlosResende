@@ -43,10 +43,6 @@ function About() {
             <SocialLink href="https://github.com/carlosresendeP" target="_blank">
               <FaGithub/>/CarlosResendeP
             </SocialLink>
-            {/* <SocialLink href="https://behance.net/felipekenzo" target="_blank">
-              <FaBehance />
-              /felipekenzo
-            </SocialLink> */}
           </SocialLinks>
           
           <TagContainer>
