@@ -287,5 +287,4 @@ export const PersonImage = styled.img`
     object-fit: cover;
     object-position: top ;
     border-radius: 10px;
-    background-image: url({PersonImg});
 `

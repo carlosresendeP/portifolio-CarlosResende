@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Subtitle, Title, Highlight, TypewriterText, IntroText, Content, ImageContent, ContentText, PersonImage, ButtonContainer} from "./Home.styled";
-import PersonImg from '/src/assets/person.png';
+import PersonImg from '../../assets/person.png';
 import { Button } from "../../components/UI/Button/button";
 import { useContactModal } from "../../hooks/useContactModal";
 import ContactModal from "../../components/ContactModal/ContactModal";
