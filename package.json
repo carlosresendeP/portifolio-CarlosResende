@@ -1,7 +1,9 @@
 {
-  "name": "novo-potifolio",
+  
+  "name": "portifolio-carlosresende",
+  "homepage": "https://devcarlosresende.com.br",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
