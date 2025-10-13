@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router";
 import { HeaderContainer, Nav, NavBarMobile, NavLink, NavLinks, MobileMenu, MobileNavLinks, MobileNavLink } from "./Header.styled";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Logo } from "../UI/Logo/logo";
@@ -6,6 +7,8 @@ import { Logo } from "../UI/Logo/logo";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -16,13 +19,30 @@ function Header() {
   };
 
   const handleScrollTo = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
-      });
+    // Se estamos na página home ("/"), faz scroll normal
+    if (location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest'
+        });
+      }
+    } else {
+      // Se estamos em outra página, navega para home com hash da seção
+      navigate(`/#${sectionId}`);
+      // Pequeno delay para garantir que a página carregou antes do scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
     closeMobileMenu();
   };

@@ -1,9 +1,7 @@
 import { Buttons, Container, Content, Description, Header, ImgProject, ProjectsList, Tags, TextProject, Button, Title, Subtitle, FinalButton, ModalBackdrop, ModalCard, ModalText } from "./projects.styled"
 import { Link } from "react-router"
 import { useState } from "react"
-import projeto1 from '../../assets/projects-images/Mockup-Perf-Master.png'
-import projeto2 from '../../assets/projects-images/Mockup-DevBurger.png'
-import projeto3 from '../../assets/projects-images/Mockup-doce-encanto.png'
+import { projectsData } from '../../data'
 import { MdComputer } from 'react-icons/md'
 import { FaGithub } from 'react-icons/fa'
 
@@ -30,33 +28,10 @@ const Projects = () => {
         }
     };
 
-    const projects =[
-        {
-            title: "Performance Master",
-            tags: ["React", "Styled-Components", "n8n", "IA"],
-            description: "Uma landing page completa e profissional para a academia Performance Master, desenvolvida com React, Vite e Styled Components, integrada com chatbot inteligente com n8n.",
-            imageUrl: projeto1,
-            deploy: "https://performace-master-academia.vercel.app/",
-            githubUrl: "https://github.com/carlosresendeP/performace-master-academia"
-        },
-        {
-            title: "DevBurger",
-            tags: ["Html", "Css", "Styledcomponents", "JavaScript", "Node.js", "Express", "MongoDb", "Postgres", "Stripe"],
-            description: "DevBurger, uma aplicação completa de gerenciamento de pedidos de hamburgueria, desenvolvida com frontend e backend separados. Este projeto foi criado para praticar conceitos modernos de desenvolvimento web full stack Projeto desenvolvido junto ao curso DevClub com Rodolfo Mori.",
-            imageUrl: projeto2,
-            deploy: "#",
-            githubUrl: "https://github.com/carlosresendeP/DevBurger-Interface"
-        },
-
-        {
-            title: "Confeitaria Doce Encanto",
-            tags: ["React", "html", "Css", "Styledcomponents", "JavaScript"],
-            description: "Doce Encanto é uma confeitaria fictícia, e esta landing page foi desenvolvida para fins educacionais, com o objetivo de praticar e aprimorar minhas habilidades em desenvolvimento web front-end.",
-            imageUrl: projeto3,
-            deploy: "https://doce-encanto-doceria.vercel.app/",
-            githubUrl: "https://github.com/carlosresendeP/Doce-Encanto-doceria"
-        },
-    ]
+    // Pegar apenas os 3 projetos mais recentes (com ID maior)
+    const projects = projectsData
+        .sort((a, b) => b.id - a.id) // Ordenar por ID decrescente (maior primeiro)
+        .slice(0, 3); // Pegar apenas os 3 primeiros
 
 
     return(

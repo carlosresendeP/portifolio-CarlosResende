@@ -41,42 +41,42 @@ export const Container = styled.div`
     filter: blur(2px);
     opacity: 0.1;
 
-  background-image: 
-  linear-gradient(
-    0deg,
-    transparent 24%,
-    ${({ theme }) => theme.colors.neutral[600]} 25%,
-    ${({ theme }) => theme.colors.neutral[600]} 26%,
+    background-image: 
+    linear-gradient(
+      0deg,
+      transparent 24%,
+      ${({ theme }) => theme.colors.neutral[600]} 25%,
+      ${({ theme }) => theme.colors.neutral[600]} 26%,
+      
+      transparent 27%,
+      transparent 74%,
+      ${({ theme }) => theme.colors.neutral[600]} 75%,
+      ${({ theme }) => theme.colors.neutral[600]} 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      ${({ theme }) => theme.colors.neutral[600]} 25%,
+      ${({ theme }) => theme.colors.neutral[600]} 26%,
+      transparent 27%,
+      transparent 74%,
+      ${({ theme }) => theme.colors.neutral[600]} 75%,
+      ${({ theme }) => theme.colors.neutral[600]} 76%,
+      transparent 77%,
+      transparent
+    );
+    background-size: 100px 105px;
     
-    transparent 27%,
-    transparent 74%,
-    ${({ theme }) => theme.colors.neutral[600]} 75%,
-    ${({ theme }) => theme.colors.neutral[600]} 76%,
-    transparent 77%,
-    transparent
-  ),
-  linear-gradient(
-    90deg,
-    transparent 24%,
-    ${({ theme }) => theme.colors.neutral[600]} 25%,
-    ${({ theme }) => theme.colors.neutral[600]} 26%,
-    transparent 27%,
-    transparent 74%,
-    ${({ theme }) => theme.colors.neutral[600]} 75%,
-    ${({ theme }) => theme.colors.neutral[600]} 76%,
-    transparent 77%,
-    transparent
-  );
-  background-size: 100px 105px;
-  
-  animation: backgroundMove 20s linear infinite;
+    animation: backgroundMove 20s linear infinite;
 
-    @keyframes backgroundMove {
-      0% { background-position: 0 0; }
-      100% { background-position: 0px 105px; }
+      @keyframes backgroundMove {
+        0% { background-position: 0 0; }
+        100% { background-position: 0px 105px; }
 
-    }
-} 
+      }
+  } 
 
   @media (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
       max-width: 1280px;
