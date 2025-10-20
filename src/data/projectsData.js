@@ -25,8 +25,10 @@ import projeto25 from '../assets/projects-images/mockup-DevBurger.png';
 import projeto26 from '../assets/projects-images/mockup-prime-digital.png';
 import projeto27 from '../assets/projects-images/mockup-app-dieta.png';
 import projeto28 from '../assets/projects-images/mockup-DevReceita.png';
-import projeto29 from '../assets/projects-images/mockup-Perf-Master.png';
-import projeto30 from '../assets/projects-images/mockup-doce-encanto.png';
+import projeto29 from '../assets/projects-images/mockup-drmarina.png';
+import projeto30 from '../assets/projects-images/mockup-tradicaoVidros.png';
+import projeto31 from '../assets/projects-images/mockup-Perf-Master.png';
+import projeto32 from '../assets/projects-images/mockup-doce-encanto.png';
 
 
 
@@ -344,12 +346,38 @@ export const projectsData = [
         technologies: ["React", "TailwindCSS", "OpenAI", "Node.js"],
         featured: true // isNew true
     },
+
     {
         id: 29,
+        title: " Dr. Marina Silva - Neuropsicóloga",
+        tags: ["html", "Css", "JavaScript","Responsive"],
+        description: "Website clínico para profissional de saúde mental com foco em apresentação de serviços, depoimentos e navegação clara.",
+        imageUrl: projeto29,
+        deploy: "https://carlosresendep.github.io/website-psicologo-1/",
+        githubUrl: "https://github.com/carlosresendeP/website-psicologo-1",
+        category: "frontend",
+        technologies: ["HTML","Css", "JavaScript"],
+        featured: false
+    },
+
+    {
+        id: 30,
+        title: "Tradição Vidros",
+        tags: ["html", "Css", "JavaScript","Responsive", "Bootstrap"],
+        description: "Website institucional para empresa de vidros e espelhos, com foco em apresentação de serviços e portfólio de projetos realizados.",
+        imageUrl: projeto30,
+        deploy: "https://carlosresendep.github.io/tradicao-vidros/",
+        githubUrl: "https://github.com/carlosresendeP/tradicao-vidros",
+        category: "frontend",
+        technologies: ["HTML","Css", "JavaScript", "Bootstrap"],
+        featured: false
+    },
+    {
+        id: 31,
         title: "Performance Master",
         tags: ["React", "Styled-Components", "n8n", "IA"],
         description: "Uma landing page completa e profissional para a academia Performance Master, desenvolvida com React, Vite e Styled Components, integrada com chatbot inteligente com n8n.",
-        imageUrl: projeto29,
+        imageUrl: projeto31,
         deploy: "https://performace-master-academia.vercel.app/",
         githubUrl: "https://github.com/carlosresendeP/performace-master-academia",
         category: "frontend",
@@ -357,17 +385,19 @@ export const projectsData = [
         featured: true
     },
     {
-        id: 30,
+        id: 32,
         title: "Confeitaria Doce Encanto",
         tags: ["React", "html", "Css", "Styledcomponents", "JavaScript"],
         description: "Doce Encanto é uma confeitaria fictícia, e esta landing page foi desenvolvida para fins educacionais, com o objetivo de praticar e aprimorar minhas habilidades em desenvolvimento web front-end.",
-        imageUrl: projeto30,
+        imageUrl: projeto32,
         deploy: "https://doce-encanto-doceria.vercel.app/",
         githubUrl: "https://github.com/carlosresendeP/Doce-Encanto-doceria",
         category: "frontend",
         technologies: ["React", "Styled Components", "JavaScript"],
         featured: false
-    }
+    },
+
+
 ];
 
 // Função para filtrar projetos por categoria
