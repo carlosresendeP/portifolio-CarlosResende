@@ -29,6 +29,7 @@ import projeto29 from '../assets/projects-images/mockup-drmarina.png';
 import projeto30 from '../assets/projects-images/mockup-tradicaoVidros.png';
 import projeto31 from '../assets/projects-images/mockup-Perf-Master.png';
 import projeto32 from '../assets/projects-images/mockup-doce-encanto.png';
+import projeto33 from '../assets/projects-images/mokup-BarberElite.png';
 
 
 
@@ -387,7 +388,7 @@ export const projectsData = [
     {
         id: 32,
         title: "Confeitaria Doce Encanto",
-        tags: ["React", "html", "Css", "Styledcomponents", "JavaScript"],
+        tags: ["React", "html", "Css", "Styled-Components", "JavaScript"],
         description: "Doce Encanto é uma confeitaria fictícia, e esta landing page foi desenvolvida para fins educacionais, com o objetivo de praticar e aprimorar minhas habilidades em desenvolvimento web front-end.",
         imageUrl: projeto32,
         deploy: "https://doce-encanto-doceria.vercel.app/",
@@ -395,6 +396,18 @@ export const projectsData = [
         category: "frontend",
         technologies: ["React", "Styled Components", "JavaScript"],
         featured: false
+    },
+    {
+        id: 33,
+        title: "Barber Elite",
+        tags: ["React", "html", "Css", "Styled-Components", "JavaScript"],
+        description: "O Barber Elite é um site moderno e responsivo desenvolvido para uma barbearia premium, com foco em experiência visual e navegação fluida. Criado com React, Styled Components e JavaScript, o projeto combina um design elegante com animações sutis e uma interface intuitiva.O layout foi pensado para transmitir sofisticação e profissionalismo, destacando serviços, horários e a identidade da marca.",
+        imageUrl: projeto33,
+        deploy: "https://barber-plus-pied.vercel.app",
+        githubUrl: "https://github.com/carlosresendeP/Barber-elite",
+        category: "frontend",
+        technologies: ["React", "Styled Components", "JavaScript"],
+        featured: true
     },
 
 
