@@ -31,7 +31,6 @@ const Footer = () => {
 
                 <CopyText>
                     <p>&copy; {currentYear}. Todos os direitos reservados.</p>
-                    <p>Desenvolvido com React.js</p>
 
                 </CopyText>
             </Content>

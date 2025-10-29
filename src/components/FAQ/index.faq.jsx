@@ -74,7 +74,7 @@ const Faq = () => {
                         <ContactTitle>Ainda com dúvidas?</ContactTitle>
                         <ContactDescription>
                             Não encontrou a resposta para sua pergunta?<br />
-                            Você pode entrar em contato comigo pelo meu e-mail, vamos discutir sobre o seu projeto!
+                            Se você não encontrou o que procurava, entre em contato direto. Mal posso esperar para entender suas ideias e transformá-las em realidade!!
                         </ContactDescription>
                         <ContactButton onClick={() => window.open('https://wa.me/5532998283189?text=Olá! Gostaria de tirar algumas dúvidas sobre seus serviços.', '_blank')}>
                             Me envie uma mensagem

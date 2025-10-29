@@ -25,14 +25,14 @@ function About() {
         </ImageSection>
         
         <TextSection>
-          <Greeting>Muito prazer 👋</Greeting>
+          <Greeting>Sobre Mim</Greeting>
           <div>
             <Name>Carlos Resende</Name>
-            <Role>Desenvolvedor FullStack</Role>
+            <Role>Desenvolvedor FullStack e Web</Role>
           </div>
           
           <Description>
-            Sou estudante de Sistemas de Informação e atuo como desenvolvedor FullStack, com foco em Front-End. Crio interfaces modernas, responsivas e otimizadas para SEO, sempre alinhando design e código para transformar ideias em soluções digitais funcionais e envolventes. Tenho experiência com React, TailwindCSS e Node.js, tecnologias que utilizo para desenvolver projetos que combinam inovação, usabilidade e resultados concretos para marcas e negócios.
+            Sou estudante de Sistemas de Informação e atuo como desenvolvedor FullStack, com foco em Front-End. Crio websites com interfaces modernas, responsivas e otimizadas para SEO, sempre alinhando design e código para transformar ideias em soluções digitais funcionais e envolventes. Tenho experiência com React, TailwindCSS e Node.js, tecnologias que utilizo para desenvolver projetos que combinam inovação, usabilidade e resultados concretos para marcas e negócios.
           </Description>
           
           <SocialLinks>

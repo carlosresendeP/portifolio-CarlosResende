@@ -15,7 +15,6 @@ const ListTitles = [
   "Desenvolvedor Front-End",
   "Desenvolvedor Full Stack",
   "Desenvolvedor Web",
-  "Engenheiro de Software",
 ];
 
 function Home() {
@@ -67,12 +66,12 @@ function Home() {
         <Content>
           <div className="background-effect"></div>
           <ContentText>
-            <IntroText>Hi, I'm <Highlight>Carlos Resende 👋🏼</Highlight></IntroText>
+            <IntroText>Prazer! Eu sou <Highlight>Carlos Resende</Highlight></IntroText>
             <Title>
               <TypewriterText>{displayedText}</TypewriterText>
             </Title>
             <Subtitle>
-              Como desenvolvedor Front-End, crio experiências digitais que unem estética e usabilidade. Do layout à interação, cada linha de código é projetada para encantar o usuário, garantindo sites rápidos, responsivos e memoráveis!
+              Especialista em Front-End. Meu trabalho vai além do código: garanto a pixel-perfection e a performance otimizada, transformando designs complexos em interfaces rápidas, acessíveis e totalmente responsivas.
             </Subtitle>
             <ButtonContainer>
               <Button onClick={openModal}>Começe um projeto</Button>

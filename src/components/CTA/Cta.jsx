@@ -34,7 +34,7 @@ const Cta = () => {
                     </Title>
                     <Description>
                         Do primeiro esboço ao código final, cada detalhe importa.<br />
-                        Seu projeto merece ser levado ao <Highlight>próximo nível</Highlight>.
+                        Seu projeto é o <Highlight>próximo sucesso</Highlight> que vamos construir juntos.
                     </Description>
                     <Button 
                         variant="cta" 
