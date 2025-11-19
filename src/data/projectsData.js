@@ -30,7 +30,7 @@ import projeto30 from '../assets/projects-images/mockup-tradicaoVidros.png';
 import projeto31 from '../assets/projects-images/mockup-Perf-Master.png';
 import projeto32 from '../assets/projects-images/mockup-doce-encanto.png';
 import projeto33 from '../assets/projects-images/mokup-BarberElite.png';
-
+import projeto34 from '../assets/projects-images/mockup-netGestao.png';
 
 
 // Dados dos projetos
@@ -409,6 +409,19 @@ export const projectsData = [
         technologies: ["React", "Styled Components", "JavaScript"],
         featured: true
     },
+    {
+        id: 34,
+        title: "Net Gestão",
+        tags: ["React", "Next.js", "tailwindcss", "TypeScript", "Banco de Dados", "mongoDB"],
+        description: "O Net Gestão é uma plataforma web desenvolvida para facilitar a gestão de grupos de networking profissional. O sistema permite:Cadastro controlado: Processo de aprovação de novos membros com sistema de convites, Dashboard de membros: Área exclusiva para acompanhamento de atividades, Sistema de indicações: Geração e acompanhamento de oportunidades de negócio entre membros, Gestão administrativa: Painel para aprovação de membros e controle da rede",
+        imageUrl: projeto34,
+        deploy: "https://net-gestao.vercel.app/",
+        githubUrl: "https://github.com/carlosresendeP/net-gestao",
+        category: "frontend",
+        technologies: ["React", "Next.js", "tailwindcss", "TypeScript", "Banco de Dados", "mongoDB"],
+        featured: true
+    },
+
 
 
 ];

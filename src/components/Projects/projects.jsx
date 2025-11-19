@@ -48,7 +48,7 @@ const Projects = () => {
                         </ImgProject>
 
                         <TextProject>
-                            <h2>{project.title}</h2>
+                            <h2>{project.title} <span>novo</span></h2>
                             <Tags>
                                 {project.tags.map((tag, i) => (
                                     <span key={i}>{tag}</span>

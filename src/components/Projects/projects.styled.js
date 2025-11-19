@@ -154,6 +154,17 @@ export const TextProject = styled.div`
     font-weight: 450;
     color: ${({ theme }) => theme.colors.neutral[900]};
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+      background-color: #ff3b5cff;
+      border-radius: 20px;
+      padding: 2px 6px;
+      font-size: 1rem;
+      margin-left: 20px;
+    }
     
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
       font-size: 1.75rem;
