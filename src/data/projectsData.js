@@ -31,6 +31,7 @@ import projeto31 from '../assets/projects-images/mockup-Perf-Master.png';
 import projeto32 from '../assets/projects-images/mockup-doce-encanto.png';
 import projeto33 from '../assets/projects-images/mokup-BarberElite.png';
 import projeto34 from '../assets/projects-images/mockup-netGestao.png';
+import projeto35 from '../assets/projects-images/mockup-clarisse-nutri.png';
 
 
 // Dados dos projetos
@@ -421,6 +422,19 @@ export const projectsData = [
         technologies: ["React", "Next.js", "tailwindcss", "TypeScript", "Banco de Dados", "mongoDB"],
         featured: true
     },
+    {
+        id: 35,
+        title: "Site de Nutricionista - Clarisse Nutri",
+        tags: ["React", "Next.js", "tailwindcss", "TypeScript"],
+        description: "Site institucional para nutricionista, com foco em apresentação de serviços, depoimentos e contato.",
+        imageUrl: projeto35,
+        deploy: "https://clarisse-nutri.vercel.app/",
+        githubUrl: "https://github.com/carlosresendeP/clarisse-nutri",
+        category: "frontend",
+        technologies: ["React", "Next.js", "tailwindcss", "TypeScript"],
+        featured: true
+    },
+
 
 
 
