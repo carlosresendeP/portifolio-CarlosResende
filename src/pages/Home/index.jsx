@@ -10,6 +10,7 @@ import Skills from "../../components/Skills/index.Skill";
 import WorkFlow from "../../components/WorkFlows/index.Workflow";
 import Faq from "../../components/FAQ/index.faq";
 import Cta from "../../components/CTA/Cta";
+import ColorBends from "../../components/ColorBends";
 
 const ListTitles = [
   "Desenvolvedor Front-End",
@@ -64,7 +65,22 @@ function Home() {
     <>
       <Container id="home">
         <Content>
-          <div className="background-effect"></div>
+          {/* <div className="background-effect"></div> */}
+          <div className="background-effect">
+            <ColorBends 
+              colors={["#353535", "#6055ff", "#346aff", "#60ffa7"]}
+              height="100%"  width="100%"
+              blur="100px"  opacity="0.7"
+              speed={0.4}
+              mouseInfluence={0}
+              rotation={30}
+              parallax={0}
+              scale={1.7}
+              frequency={1.1}
+            />
+          </div>
+
+
           <ContentText>
             <IntroText>Prazer! Eu sou <Highlight>Carlos Resende</Highlight></IntroText>
             <Title>

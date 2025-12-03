@@ -39,9 +39,9 @@ export const Container = styled.div`
     background-size: cover;
     mix-blend-mode: overlay;
     filter: blur(2px);
-    opacity: 0.1;
+    opacity: 0.6;
 
-    background-image: 
+     /* background-image: 
     linear-gradient(
       0deg,
       transparent 24%,
@@ -75,7 +75,7 @@ export const Container = styled.div`
         0% { background-position: 0 0; }
         100% { background-position: 0px 105px; }
 
-      }
+      }  */
   } 
 
   @media (max-width: ${({ theme }) => theme.breakpoints.desktop}) {

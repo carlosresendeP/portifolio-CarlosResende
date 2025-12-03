@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router'
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/themes'
 import GlobalStyle from './styles/GlobalStyle'
@@ -7,6 +7,20 @@ import Home from './pages/Home'
 
 import Footer from './components/Footer/Footer'
 import Projects from './pages/AllProjects/index.AllProjects'
+// import Cbitzero from './pages/Cbitzero'
+
+const DefaultLayout = () => {
+    return (
+    <>
+      <Header />
+      <main>
+        <Outlet /> {/* Aqui é onde as rotas filhas serão renderizadas */}
+      </main>
+      <Footer />
+    </>
+  )
+
+}
 
 
 function App() {
@@ -14,15 +28,14 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <GlobalStyle />
-        <Header />
-
-        <main>
-          <Routes>
+          <Routes element={<DefaultLayout />}>
+            {/* Rota com layout padrão */}
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+          
+            {/* Rota sem layout padrão */}
+            {/* <Route path="/cbitzero" element={<Cbitzero />} /> */}
           </Routes>
-        </main>
-        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   )
