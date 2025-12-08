@@ -7,7 +7,7 @@ import Home from './pages/Home'
 
 import Footer from './components/Footer/Footer'
 import Projects from './pages/AllProjects/index.AllProjects'
-// import Cbitzero from './pages/Cbitzero'
+// p
 
 const DefaultLayout = () => {
     return (
