@@ -10,8 +10,11 @@ import {
     SkillsList, 
     SkillItem, 
     SkillIcon, 
+    SkillInfo,
     SkillName, 
-    SkillLevel 
+    SkillLevelContainer,
+    SkillLevel,
+    ProgressBar
 } from "./Skills.styled";
 import { 
     FaReact, 
@@ -57,7 +60,7 @@ const Skills = () => {
                 { name: "Express", icon: <SiExpress />, level: "Intermediário" },
                 { name: "MongoDB", icon: <SiMongodb />, level: "Intermediário" },
                 { name: "PostgreSQL", icon: <SiPostgresql />, level: "Básico" },
-                { name: "Prisma", icon: <SiPrisma />, level: "Básico" }
+                { name: "Prisma", icon: <SiPrisma />, level: "Intermediário" }
             ]
         },
         {
@@ -65,7 +68,7 @@ const Skills = () => {
             skills: [
                 { name: "Figma", icon: <FaFigma />, level: "Básico" },
                 { name: "Git", icon: <FaGitAlt />, level: "Intermediário" },
-                { name: "UI/UX Design", icon: <FaDatabase />, level: "Básico" },
+                { name: "UI/UX Design", icon: <FaDatabase />, level: "Intermediário" },
                 {name: "N8N", icon: <SiN8N  />, level: "Básico" },
             ]
         }
@@ -80,16 +83,19 @@ const Skills = () => {
 
             <SkillsGrid>
                 {skillsData.map((category, index) => (
-                    <SkillCategory key={index}>
+                    <SkillCategory key={index} index={index}>
                         <CategoryTitle>{category.category}</CategoryTitle>
                         <SkillsList>
                             {category.skills.map((skill, skillIndex) => (
                                 <SkillItem key={skillIndex}>
-                                    <SkillIcon>{skill.icon}</SkillIcon>
-                                    <div>
+                                    <SkillIcon index={skillIndex}>{skill.icon}</SkillIcon>
+                                    <SkillInfo>
                                         <SkillName>{skill.name}</SkillName>
-                                        <SkillLevel $level={skill.level}>{skill.level}</SkillLevel>
-                                    </div>
+                                        <SkillLevelContainer>
+                                            <SkillLevel $level={skill.level}>{skill.level}</SkillLevel>
+                                            <ProgressBar $level={skill.level} />
+                                        </SkillLevelContainer>
+                                    </SkillInfo>
                                 </SkillItem>
                             ))}
                         </SkillsList>

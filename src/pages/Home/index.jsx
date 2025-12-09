@@ -11,6 +11,7 @@ import WorkFlow from "../../components/WorkFlows/index.Workflow";
 import Faq from "../../components/FAQ/index.faq";
 import Cta from "../../components/CTA/Cta";
 import ColorBends from "../../components/ColorBends";
+import Footer from "../../components/Footer/Footer";
 
 const ListTitles = [
   "Desenvolvedor Front-End",
@@ -123,6 +124,7 @@ function Home() {
       <Skills />
       <Faq />
       <Cta />
+      <Footer />
     </>
   );
 }
