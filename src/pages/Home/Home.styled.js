@@ -115,12 +115,12 @@ export const Content = styled.div`
 `
 
 export const ContentText = styled.div`
-  max-width: 50%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: start;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
@@ -186,7 +186,8 @@ export const Subtitle = styled.p`
   color: ${({ theme }) => theme.colors.neutral[500]};
   margin: 0 auto;
   line-height: 1.8;
-  text-align: left;
+  text-align: center;
+  max-width: 80%;
   
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 1rem;

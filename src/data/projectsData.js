@@ -33,6 +33,7 @@ import projeto33 from '../assets/projects-images/mokup-BarberElite.png';
 import projeto34 from '../assets/projects-images/mockup-netGestao.png';
 import projeto35 from '../assets/projects-images/mockup-clarisse-nutri.png';
 import projeto36 from '../assets/projects-images/mockup-drana.png';
+import projeto37 from '../assets/projects-images/mockup-aparatus.png';
 
 
 // Dados dos projetos
@@ -444,6 +445,18 @@ export const projectsData = [
         deploy: "https://psi-dr-ana.vercel.app/",
         githubUrl: "https://github.com/carlosresendeP/psi-dr-ana",
         category: "frontend",
+        technologies: ["React", "Next.js", "tailwindcss", "TypeScript"],
+        featured: true
+    },
+    {
+        id: 37,
+        title: "Aparatus Mobile - SaaS para Agendamentos de Barbearias",
+        tags: ["React", "Next.js", "tailwindcss", "TypeScript", 'Mobile First', 'SaaS'],
+        description: "Um projeto SaaS para agencia de barbearias, com foco em agendamentos e pagamen",
+        imageUrl: projeto37,
+        deploy: "https://aparatus-nu.vercel.app",
+        githubUrl: "https://github.com/carlosresendeP/aparatus",
+        category: "fullstack",
         technologies: ["React", "Next.js", "tailwindcss", "TypeScript"],
         featured: true
     },

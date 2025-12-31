@@ -100,11 +100,11 @@ function Home() {
               </Button>
             </ButtonContainer>
           </ContentText>
-          <ImageContent>
+          {/* <ImageContent>
             <div>
               <PersonImage src={PersonImg} alt="Carlos - imagem" />
             </div>
-          </ImageContent>
+          </ImageContent> */}
         </Content>
       </Container>
 
