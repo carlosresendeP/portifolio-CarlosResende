@@ -7,6 +7,9 @@ const getVariantStyles = (variant, theme) => {
                 background-color: transparent;
                 border: 2px solid ${theme.colors.primary[200]};
                 color: ${theme.colors.neutral[100]};
+                padding: 10px 20px;
+                border-radius: 5px;
+                width: 100%;
                 
                 &:hover:not(:disabled) {
                     background-color: ${theme.colors.primary[600]};
@@ -18,6 +21,9 @@ const getVariantStyles = (variant, theme) => {
                 background: transparent;
                 color: ${theme.colors.neutral[100]};
                 border: 2px solid ${theme.colors.neutral[100]};
+                padding: 10px 20px;
+                border-radius: 5px;
+                width: 100%;
                 
                 &:hover:not(:disabled) {
                     background: ${theme.colors.neutral[100]};
@@ -30,6 +36,9 @@ const getVariantStyles = (variant, theme) => {
                 background: ${theme.colors.neutral[100]};
                 color: ${theme.colors.neutral[900]};
                 border: 2px solid ${theme.colors.neutral[300]};
+                padding: 10px 20px;
+                border-radius: 5px;
+                width: 100%;
                 
                 &:hover:not(:disabled) {
                     background: transparent;
@@ -69,7 +78,7 @@ export const ButtonContainer = styled.button`
     
     ${({ $variant, theme }) => getVariantStyles($variant, theme)}
 
-    &::before {
+    &:before {
         content: '';
         position: absolute;
         top: 0;
@@ -83,7 +92,7 @@ export const ButtonContainer = styled.button`
     &:hover:not(:disabled) {
         transform: translateY(-2px);
 
-        &::before {
+        &:before {
             left: 100%;
         }
     }

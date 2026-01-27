@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import {Dot } from 'lucide-react'
 
 const blink = keyframes`
   0%, 50% {
@@ -40,7 +41,7 @@ export const Container = styled.div`
     background-size: cover;
     mix-blend-mode: overlay;
     filter: blur(2px);
-    opacity: 0.6;
+    opacity: 0.1;
   }
 
 
@@ -98,13 +99,14 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 100%;
+  max-width: 1280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   background-color: transparent;
   z-index: 2;
-
+  margin: auto;
 
 
 
@@ -121,13 +123,42 @@ export const Content = styled.div`
   }
 `;
 
+export const Badge = styled.span`
+  background-color: #00d85acb;
+  color: ${({ theme }) => theme.colors.neutral[50]};
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 10px;
+  animation: pulsecolor 2s infinite;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+
+  @keyframes pulsecolor {
+    0% {
+      background-color: #00d85acb;
+    }
+    50% {
+      background-color: #00d85a;
+    }
+    100% {
+      background-color: #00d85acb;
+    }
+  }
+`;
+
 export const ContentText = styled.div`
-  max-width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
@@ -150,6 +181,8 @@ export const ContentText = styled.div`
     padding: 15px;
   }
 `;
+
+
 
 export const Title = styled.h1`
   font-size: 4rem;
@@ -178,7 +211,7 @@ export const Title = styled.h1`
 export const TypewriterText = styled.span`
   position: relative;
 
-  &::after {
+  &:after {
     content: "|";
     color: ${({ theme }) => theme.colors.neutral[600]};
     opacity: 0.6;
@@ -190,9 +223,9 @@ export const TypewriterText = styled.span`
 export const Subtitle = styled.p`
   font-size: 1.125rem;
   color: ${({ theme }) => theme.colors.neutral[500]};
-  margin: 0 auto;
+
   line-height: 1.8;
-  text-align: center;
+  text-align: left;
   max-width: 80%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
@@ -228,6 +261,7 @@ export const IntroText = styled.p`
 
 export const ButtonContainer = styled.div`
   display: flex;
+  width: 50%;
   gap: 1rem;
   margin-top: 2rem;
 
@@ -236,6 +270,7 @@ export const ButtonContainer = styled.div`
     margin-top: 0;
     flex: 1;
     max-width: none;
+    padding: 10px 20px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
