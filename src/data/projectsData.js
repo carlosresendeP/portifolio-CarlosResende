@@ -34,7 +34,8 @@ import projeto34 from '../assets/projects-images/mockup-netGestao.png';
 import projeto35 from '../assets/projects-images/mockup-clarisse-nutri.png';
 import projeto36 from '../assets/projects-images/mockup-drana.png';
 import projeto37 from '../assets/projects-images/mockup-aparatus.png';
-
+import projeto38 from '../assets/projects-images/mockup-devbills.png';
+import projeto39 from '../assets/projects-images/mockup-vagaCerta.jpeg';
 
 // Dados dos projetos
 export const projectsData = [
@@ -450,14 +451,39 @@ export const projectsData = [
     },
     {
         id: 37,
-        title: "Aparatus Mobile - SaaS para Agendamentos de Barbearias",
-        tags: ["React", "Next.js", "tailwindcss", "TypeScript", 'Mobile First', 'SaaS'],
+        title: "Aparatus Mobile - SaaS Barbearias",
+        tags: ["React", "Next.js", "tailwindcss", "TypeScript", 'Mobile First', 'SaaS', 'banco de dados', 'supabase', 'node.js', 'IA'],
         description: "Um projeto SaaS para agencia de barbearias, com foco em agendamentos e pagamen",
         imageUrl: projeto37,
         deploy: "https://aparatus-nu.vercel.app",
         githubUrl: "https://github.com/carlosresendeP/aparatus",
         category: "fullstack",
         technologies: ["React", "Next.js", "tailwindcss", "TypeScript"],
+        featured: true
+    },
+
+    {
+        id: 38,
+        title: "DevBills - Finanças",
+        tags: ["React", "tailwindcss", "TypeScript", 'Mobile First', 'banco de dados', 'mongoDB', 'Node.js', 'Fastify'],
+        description: "DevBills, uma aplicação completa para gestão financeira desenvolvida com as melhores práticas de mercado. Este projeto é dividido em uma API robusta e uma interface moderna e responsiva.",
+        imageUrl: projeto38,
+        deploy: "https://devbills-financas.vercel.app/",
+        githubUrl: "https://github.com/carlosresendeP/DevBills",
+        category: "fullstack",
+        technologies: ["React", "Node.js", "tailwindcss", "TypeScript", "mongoDB"],
+        featured: true
+    },
+        {
+        id: 39,
+        title: "Vaga Certa",
+        tags: ["React",'Next.js', "tailwindcss", "TypeScript", 'banco de dados', 'supabase', 'Node.js'],
+        description: "Vaga Certa é uma plataforma de otimização de currículos impulsionada por IA, projetada para ajudar candidatos a se destacarem no mercado de trabalho.",
+        imageUrl: projeto39,
+        deploy: "https://vaga-certa-ten.vercel.app/",
+        githubUrl: "https://github.com/carlosresendeP/vaga-certa",
+        category: "fullstack",
+        technologies: ["React", "Next.js", "tailwindcss", "TypeScript", "supabase"],
         featured: true
     },
 

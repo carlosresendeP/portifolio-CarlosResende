@@ -31,14 +31,16 @@ const Projects = () => {
     // Pegar apenas os 3 projetos mais recentes (com ID maior)
     const projects = projectsData
         .sort((a, b) => b.id - a.id) // Ordenar por ID decrescente (maior primeiro)
-        .slice(0, 3); // Pegar apenas os 3 primeiros
+        .slice(0, 4); // Pegar apenas os 3 primeiros
+
+    const date = new Date().getFullYear();
 
 
     return(
         <Container id="projects">
             <Header>
                 <Title>Projetos</Title>
-                <Subtitle>Meus melhores projetos • 2024 - 2025</Subtitle>
+                <Subtitle>Meus melhores projetos • 2024 - {date}</Subtitle>
             </Header>
             <Content>
                 {projects.map((project, index) => (
