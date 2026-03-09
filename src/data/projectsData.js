@@ -36,6 +36,7 @@ import projeto36 from '../assets/projects-images/mockup-drana.png';
 import projeto37 from '../assets/projects-images/mockup-aparatus.png';
 import projeto38 from '../assets/projects-images/mockup-devbills.png';
 import projeto39 from '../assets/projects-images/mockup-vagaCerta.jpeg';
+import projeto40 from '../assets/projects-images/mockup-BarberShop.png';
 
 // Dados dos projetos
 export const projectsData = [
@@ -486,6 +487,18 @@ export const projectsData = [
         technologies: ["React", "Next.js", "tailwindcss", "TypeScript", "supabase"],
         featured: true
     },
+    {
+        id: 40,
+        title: "Barber Shop",
+        tags: ["Next.js", "React", "tailwindcss", "TypeScript", 'Mobile First'],
+        description: "landing page para um website para uma barbearia com um design moderno e responsivo.",
+        imageUrl: projeto40,
+        deploy: "https://barber-shop-flame-seven.vercel.app/",
+        githubUrl: "https://github.com/carlosresendeP/BarberShop",
+        category: "fullstack",
+        technologies: ["Next.js", "Node.js", "tailwindcss", "TypeScript"],
+        featured: true
+    }
 
 
 

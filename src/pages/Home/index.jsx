@@ -23,8 +23,8 @@ import WorkFlow from "../../components/WorkFlows/index.Workflow";
 import Faq from "../../components/FAQ/index.faq";
 import Cta from "../../components/CTA/Cta";
 import ColorBends from "../../components/ColorBends";
-import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+
 
 const ListTitles = [
   "Desenvolvedor Front-End",
